@@ -57,7 +57,7 @@ func flush(runes []rune) []rune {
 
 func main() {
 	if len(os.Args) == 1 || os.Args[1] == "--help" {
-		_, _ = fmt.Fprintln(os.Stderr, "usage: strings FILE")
+		_, _ = fmt.Fprintln(os.Stderr, "usage: strings file")
 		os.Exit(2)
 	}
 
