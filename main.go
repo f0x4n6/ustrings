@@ -31,7 +31,7 @@ import (
 )
 
 func main() {
-	if len(os.Args) == 1 || os.Args[1] == "--help" {
+	flag.Usage = func() {
 		_, _ = fmt.Fprintln(os.Stderr, "usage: ustrings [nmao] file")
 		os.Exit(2)
 	}
@@ -42,6 +42,10 @@ func main() {
 	o := flag.Bool("o", false, "show file offset")
 
 	flag.Parse()
+
+	if flag.NArg() == 0 {
+		flag.Usage()
+	}
 
 	f, err := os.Open(flag.Arg(0))
 

@@ -16,5 +16,8 @@ $ ustrings [nmao] FILE
 * `-a` Only ASCII strings
 * `-o` Show file offset
 
+## Acknowledgements
+The carving algorithm is based on the original [Strings](https://github.com/robpike/strings) by [Rob Pike](https://github.com/robpike).
+
 ## License
 Released under the [MIT License](LICENSE.md).
