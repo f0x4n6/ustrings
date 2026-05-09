@@ -7,7 +7,7 @@ go install go.foxforensics.dev/strings@latest
 
 ## Usage
 ```console
-$ strings [nmtao] FILE
+$ strings [-nmtao] FILE
 ```
 
 ### Options

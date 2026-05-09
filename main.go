@@ -2,7 +2,7 @@
 //
 // Usage:
 //
-//	strings [nmtao] file
+//	strings [-nmtao] file
 //
 // The options are:
 //
@@ -35,7 +35,7 @@ import (
 
 func main() {
 	flag.Usage = func() {
-		_, _ = fmt.Fprintln(os.Stderr, "usage: strings [nmtao] file")
+		_, _ = fmt.Fprintln(os.Stderr, "usage: strings [-nmtao] file")
 		os.Exit(2)
 	}
 
